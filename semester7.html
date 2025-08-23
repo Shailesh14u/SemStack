@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SemStack – Semester 7</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="logo"></span><span>SemStack</span></a>
+  <nav id="nav-links"></nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h1>Semester 7</h1>
+    <p class="subtitle">Deep Learning • Blockchain • Mobile Computing • Cloud Security • Electives</p>
+    <div class="price">₹299</div>
+    <ul class="topics">
+      <li>Deep Learning crash course</li>
+      <li>Blockchain concepts & smart contracts</li>
+      <li>Mobile app patterns</li>
+      <li>Cloud security practices</li>
+      <li>Elective reading pack</li>
+    </ul>
+    <div style="margin-top:12px">
+      <button id="buy-btn" class="btn btn-primary">Buy Semester 7</button>
+    </div>
+    <div id="downloads" class="downloads" style="display:none"></div>
+  </div>
+</main>
+
+<footer><p>© 2025 SemStack. <a href="#">Support</a></p></footer>
+
+<script src="script.js"></script>
+<script>
+  renderSemesterPage({
+    id:"sem7",
+    title:"Semester 7",
+    price:299,
+    downloads:[
+      {label:"Deep Learning Notes", url:"https://www.mediafire.com/file/xxxx/dl.pdf/file"},
+      {label:"Blockchain Notes", url:"https://www.mediafire.com/file/xxxx/blockchain.pdf/file"},
+      {label:"Mobile Computing", url:"https://www.mediafire.com/file/xxxx/mobile.pdf/file"},
+      {label:"Cloud Security", url:"https://www.mediafire.com/file/xxxx/cloudsec.pdf/file"}
+    ]
+  });
+</script>
+</body>
+</html>

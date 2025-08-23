@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SemStack – Semester 2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="logo"></span><span>SemStack</span></a>
+  <nav id="nav-links"></nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h1>Semester 2</h1>
+    <p class="subtitle">Mathematics II • Electronics • Data Structures • Engineering Drawing • EVS • Computer Organization</p>
+    <div class="price">₹199</div>
+    <ul class="topics">
+      <li>Mathematics II complete guide</li>
+      <li>Electronics basics with circuits</li>
+      <li>Data Structures (C/C++) with problems</li>
+      <li>Engineering Drawing templates</li>
+      <li>Environmental Science notes</li>
+      <li>Computer Organization handbook</li>
+    </ul>
+    <div style="margin-top:12px">
+      <button id="buy-btn" class="btn btn-primary">Buy Semester 2</button>
+    </div>
+    <div id="downloads" class="downloads" style="display:none"></div>
+  </div>
+</main>
+
+<footer><p>© 2025 SemStack. <a href="#">Support</a></p></footer>
+
+<script src="script.js"></script>
+<script>
+  renderSemesterPage({
+    id:"sem2",
+    title:"Semester 2",
+    price:199,
+    downloads:[
+      {label:"Mathematics II (Kumbhojkar 2)", url:"https://www.mediafire.com/file/4fl09q5hlgue4q8/G.V_Kumbhojkar_2.pdf/file"},
+      {label:"Physcis 2", url:"https://www.mediafire.com/file/xxxx/electronics.pdf/file"},
+      {label:"Data Structures", url:"https://www.mediafire.com/file/86c7wnft315parn/DS_NOTES.pdf/file"},
+      {label:"Engg Drawing", url:"https://www.mediafire.com/file/xxxx/drawing.pdf/file"},
+      {label:"Chemestry 2", url:"https://www.mediafire.com/file/xxxx/evs.pdf/file"},
+      
+    ]
+  });
+</script>
+</body>
+</html>

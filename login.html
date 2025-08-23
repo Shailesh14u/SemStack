@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SemStack – Login / Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html"><span class="logo"></span><span>SemStack</span></a>
+    <nav id="nav-links"></nav>
+  </header>
+
+  <main class="container auth-wrap">
+    <div class="card" id="box-login">
+      <h2>Welcome back</h2>
+      <p class="subtitle">Log in to buy courses and access downloads.</p>
+      <form id="login-form">
+        <input class="input" name="username" placeholder="Username" autocomplete="username">
+        <input class="input" name="password" type="password" placeholder="Password" autocomplete="current-password">
+        <button class="btn btn-primary" type="submit" style="width:100%">Login</button>
+      </form>
+      <p class="helper center">New here? <a href="#" data-switch="register">Create an account</a></p>
+    </div>
+
+    <div class="card" id="box-register" style="display:none">
+      <h2>Create your account</h2>
+      <p class="subtitle">It’s free. You’ll stay signed in on this device.</p>
+      <form id="register-form">
+        <input class="input" name="username" placeholder="Choose a username">
+        <input class="input" name="password" type="password" placeholder="Create a password">
+        <button class="btn btn-primary" type="submit" style="width:100%">Register</button>
+      </form>
+      <p class="helper center">Already have an account? <a href="#" data-switch="login">Log in</a></p>
+    </div>
+
+    <div class="card">
+      <p class="helper">Demo only: credentials are stored in your browser’s localStorage (not secure for production).</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 SemStack. <a href="#">Support</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>initLoginPage();</script>
+</body>
+</html>

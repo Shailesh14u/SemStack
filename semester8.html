@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SemStack – Semester 8</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="logo"></span><span>SemStack</span></a>
+  <nav id="nav-links"></nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h1>Semester 8</h1>
+    <p class="subtitle">Project • Seminar • Entrepreneurship • Electives • Internship</p>
+    <div class="price">₹289</div>
+    <ul class="topics">
+      <li>Project documentation templates</li>
+      <li>Seminar presentation kit</li>
+      <li>Entrepreneurship handbook</li>
+      <li>Elective summaries</li>
+      <li>Internship guide</li>
+    </ul>
+    <div style="margin-top:12px">
+      <button id="buy-btn" class="btn btn-primary">Buy Semester 8</button>
+    </div>
+    <div id="downloads" class="downloads" style="display:none"></div>
+  </div>
+</main>
+
+<footer><p>© 2025 SemStack. <a href="#">Support</a></p></footer>
+
+<script src="script.js"></script>
+<script>
+  renderSemesterPage({
+    id:"sem8",
+    title:"Semester 8",
+    price:289,
+    downloads:[
+      {label:"Project Templates", url:"https://www.mediafire.com/file/xxxx/project.pdf/file"},
+      {label:"Seminar Kit", url:"https://www.mediafire.com/file/xxxx/seminar.pdf/file"},
+      {label:"Entrepreneurship", url:"https://www.mediafire.com/file/xxxx/entrepreneurship.pdf/file"},
+      {label:"Internship Guide", url:"https://www.mediafire.com/file/xxxx/internship.pdf/file"}
+    ]
+  });
+</script>
+</body>
+</html>

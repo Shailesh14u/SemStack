@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SemStack – Semester 5</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="logo"></span><span>SemStack</span></a>
+  <nav id="nav-links"></nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h1>Semester 5</h1>
+    <p class="subtitle">AI • Machine Learning • Web Tech • Compiler Design • Big Data</p>
+    <div class="price">₹199</div>
+    <ul class="topics">
+      <li>AI foundations + search</li>
+      <li>ML algorithms notebook</li>
+      <li>Full-stack web mini-project</li>
+      <li>Compiler phases guide</li>
+      <li>Big Data ecosystem overview</li>
+    </ul>
+    <div style="margin-top:12px">
+      <button id="buy-btn" class="btn btn-primary">Buy Semester 5</button>
+    </div>
+    <div id="downloads" class="downloads" style="display:none"></div>
+  </div>
+</main>
+
+<footer><p>© 2025 SemStack. <a href="#">Support</a></p></footer>
+
+<script src="script.js"></script>
+<script>
+  renderSemesterPage({
+    id:"sem5",
+    title:"Semester 5",
+    price:199,
+    downloads:[
+      {label:"AI Notes", url:"https://www.mediafire.com/file/xxxx/ai.pdf/file"},
+      {label:"Machine Learning Notes", url:"https://www.mediafire.com/file/xxxx/ml.pdf/file"},
+      {label:"Web Tech Pack", url:"https://www.mediafire.com/file/xxxx/web.pdf/file"},
+      {label:"Compiler Design", url:"https://www.mediafire.com/file/xxxx/compiler.pdf/file"},
+      {label:"Big Data Handbook", url:"https://www.mediafire.com/file/xxxx/bigdata.pdf/file"}
+    ]
+  });
+</script>
+</body>
+</html>

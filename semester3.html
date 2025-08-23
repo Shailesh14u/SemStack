@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SemStack – Semester 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="logo"></span><span>SemStack</span></a>
+  <nav id="nav-links"></nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h1>Semester 3</h1>
+    <p class="subtitle">Discrete Math • Computer Networks • DBMS • Operating Systems • Digital Logic</p>
+    <div class="price">₹249</div>
+    <ul class="topics">
+      <li>Discrete Math with proofs</li>
+      <li>Networks with TCP/IP labs</li>
+      <li>DBMS ERD, SQL practice</li>
+      <li>OS: processes, memory, scheduling</li>
+      <li>Digital Logic gates to FSM</li>
+    </ul>
+    <div style="margin-top:12px">
+      <button id="buy-btn" class="btn btn-primary">Buy Semester 3</button>
+    </div>
+    <div id="downloads" class="downloads" style="display:none"></div>
+  </div>
+</main>
+
+<footer><p>© 2025 SemStack. <a href="#">Support</a></p></footer>
+
+<script src="script.js"></script>
+<script>
+  renderSemesterPage({
+    id:"sem3",
+    title:"Semester 3",
+    price:249,
+    downloads:[
+      {label:"Mathematics 3 (EM3)", url:"EM3_GVK.pdf"},
+      {label:"DSGT (Nirali)", url:"https://www.mediafire.com/file/y79vxhdrfz3p79i/DSGT_Nirali_Publication_Sem_3_comps.pdf/file"},
+      {label:"Analysis of Algorithm", url:"https://www.mediafire.com/file/xxxx/networks.pdf/file"},
+      {label:"Computer organization and Architecture", url:"https://www.mediafire.com/file/xxxx/dbms.pdf/file"},
+      {label:"Mathematics 4 (EM4)", url:"https://www.mediafire.com/file/hs953b99zts2oot/EM4_GVK.pdf/file"}
+    ]
+  });
+</script>
+</body>
+</html>

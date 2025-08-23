@@ -1,0 +1,61 @@
+/* Global */
+* { box-sizing: border-box; }
+:root{
+  --bg:#f5f5f5; --text:#222; --muted:#666;
+  --accent:#ff9800; --accent-2:#e68900; --danger:#e53935;
+  --card:#ffffff; --shadow:0 5px 12px rgba(0,0,0,.1);
+}
+html,body{margin:0;padding:0;font-family:"Poppins",system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);}
+
+/* Header */
+header{
+  background:#222;color:#fff;position:sticky;top:0;z-index:50;
+  padding:14px 28px;display:flex;align-items:center;justify-content:space-between;
+  box-shadow:0 3px 10px rgba(0,0,0,.25);
+}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#ffb347,#ff9800);display:inline-block;}
+.brand span{color:#ff9800;font-weight:700;font-size:20px;}
+nav a, nav span{color:#fff;text-decoration:none;margin-left:18px;font-weight:500}
+nav a:hover{color:var(--accent)}
+
+/* Containers & Cards */
+.container{max-width:1100px;margin:32px auto;padding:0 18px}
+.card{
+  background:var(--card);border-radius:14px;box-shadow:var(--shadow);
+  padding:24px;margin:0 0 22px 0;transition:transform .2s ease;
+}
+.card:hover{transform:translateY(-2px)}
+.card h1,.card h2{margin:.2rem 0 .6rem 0}
+.subtitle{color:var(--muted);margin-top:-4px}
+
+/* Buttons */
+.btn{display:inline-block;border:none;cursor:pointer;border-radius:10px;
+  padding:12px 18px;font-weight:700;transition:.2s ease;text-decoration:none}
+.btn-primary{background:var(--accent);color:#111}
+.btn-primary:hover{background:var(--accent-2)}
+.btn-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.25)}
+.btn-danger{background:var(--danger);color:#fff}
+
+/* Price / lists */
+.price{font-size:20px;font-weight:800;color:#ff5722;margin-top:10px}
+ul.topics{margin:8px 0 0 16px}
+ul.topics li{margin:6px 0}
+
+/* Downloads */
+.downloads{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.downloads a{
+  background:#4caf50;color:#fff;text-decoration:none;padding:10px 14px;border-radius:8px;font-weight:600
+}
+.downloads a:hover{background:#388e3c}
+
+/* Auth page */
+.auth-wrap{max-width:420px;margin:40px auto}
+.input{width:100%;padding:12px;border-radius:10px;border:1px solid #ddd;margin:8px 0}
+.helper{color:var(--muted);font-size:.9rem}
+.center{text-align:center}
+
+/* Footer */
+footer{margin:40px 0 0;background:#111;color:#ccc;padding:22px;text-align:center;border-top:2px solid var(--accent)}
+footer a{color:var(--accent);text-decoration:none}
+footer a:hover{color:#fff}

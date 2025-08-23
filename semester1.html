@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>SemStack – Semester 1</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><span class="logo"></span><span>SemStack</span></a>
+  <nav id="nav-links"></nav>
+</header>
+
+<main class="container">
+  <div class="card">
+    <h1>Semester 1</h1>
+    <p class="subtitle">Mathematics I • Physics • Chemistry • Programming Basics • Communication Skills</p>
+    <div class="price">₹209</div>
+    <ul class="topics">
+      <li>Detailed notes & solved examples for Mathematics I</li>
+      <li>Physics fundamentals with diagrams</li>
+      <li>Chemistry quick revision sheets</li>
+      <li>Programming basics in C/Python</li>
+      <li>Communication & soft skills handbook</li>
+    </ul>
+    <div style="margin-top:12px">
+      <button id="buy-btn" class="btn btn-primary">Buy Semester 1</button>
+    </div>
+    <div id="downloads" class="downloads" style="display:none"></div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 SemStack. <a href="#">Support</a></p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+  renderSemesterPage({
+    id:"sem1",
+    title:"Semester 1",
+    price:209,
+    downloads:[
+      {label:"Mathematics I (Kumbhojkar)", url:"https://www.mediafire.com/file/zacoirrj8ju02ah/G.V._Kumbhojkar_.pdf/file"},
+      {label:"Physics ", url:"https://www.mediafire.com/file/1qkr7anv5w5oqbv/Engineering_Physics_by_Jyotsna_Sharma_Shatendra_Sharma_%2528z-lib.org%2529.pdf/file"},
+      {label:"Chemistry", url:"https://www.mediafire.com/file/uepsfhgs9cf4qy9/Engg_Chemistry_1.pdf/file"},
+      {label:"BEEE", url:"https://www.mediafire.com/file/bebh3ti8ibapcfp/Ravish_singh.pdf/file"},
+      {label:"Mechnics", url:"https://www.mediafire.com/file/9bxf34ze1fnlqlf/M.D.Dayal_.pdf/file"}
+      
+    ]
+  });
+</script>
+</body>
+</html>
