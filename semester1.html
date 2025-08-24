@@ -16,13 +16,13 @@
   <div class="card">
     <h1>Semester 1</h1>
     <p class="subtitle">Mathematics I • Physics • Chemistry • BEEE • Mechnics</p>
-    <div class="price">₹209</div>
+    <div class="price">₹69</div>
     <ul class="topics">
-      <li>Mathematics I</li>
-      <li>Physics</li>
-      <li>Chemistrys</li>
+      <li>Detailed notes Mathematics I</li>
+      <li>Physics </li>
+      <li>Chemistry</li>
       <li>BEEE</li>
-      <li>Mechnaics</li>
+      <li>Mechnics</li>
     </ul>
     <div style="margin-top:12px">
       <button id="buy-btn" class="btn btn-primary">Buy Semester 1</button>
@@ -51,6 +51,34 @@
     ]
   });
 </script>
+<div id="payment-modal" class="modal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.6);display:flex;align-items:center;justify-content:center;">
+  <div style="background:white;padding:20px;border-radius:12px;max-width:400px;text-align:center;">
+    <h3>Scan to Pay</h3>
+    <div id="qrcode"></div>
+    <p>Use any UPI app to pay ₹69</p>
+    <button onclick="confirmPayment()" class="btn btn-primary">I Have Paid</button>
+    <button onclick="closeModal()" style="margin-top:10px;" class="btn">Cancel</button>
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script>
+  const upiLink = "upi://pay?pa=shailesh.m0825@okhdfcbank&pn=SemStack&am=69&cu=INR";
+
+  document.getElementById("buy-btn").addEventListener("click", () => {
+    document.getElementById("payment-modal").style.display = "flex";
+    document.getElementById("qrcode").innerHTML = "";
+    new QRCode(document.getElementById("qrcode"), upiLink);
+  });
+
+  function closeModal() {
+    document.getElementById("payment-modal").style.display = "none";
+  }
+
+  function confirmPayment() {
+    closeModal();
+    document.getElementById("downloads").style.display = "block";
+  }
+</script>
 </body>
 </html>
-
